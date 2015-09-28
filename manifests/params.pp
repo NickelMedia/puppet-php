@@ -79,20 +79,20 @@ class php::params {
       }
     }
     'RedHat': {
-      $config_root_ini         = '/etc/php.d'
+      $config_root_ini         = '/etc/opt/rh/rh-php56/php.d'
       $common_package_names    = []
       $common_package_suffixes = ['cli', 'common']
-      $cli_inifile             = '/etc/php-cli.ini'
+      $cli_inifile             = '/etc/opt/rh/rh-php56/php-cli.ini'
       $dev_package_suffix      = 'devel'
-      $fpm_config_file         = '/etc/php-fpm.conf'
+      $fpm_config_file         = '/etc/opt/rh/rh-php56/php-fpm.conf'
       $fpm_error_log           = '/var/log/php-fpm/error.log'
-      $fpm_inifile             = '/etc/php.ini'
+      $fpm_inifile             = '/etc/opt/rh/rh-php56/php.ini'
       $fpm_package_suffix      = 'fpm'
-      $fpm_pool_dir            = '/etc/php-fpm.d'
+      $fpm_pool_dir            = '/etc/opt/rh/rh-php56/php-fpm.d'
       $fpm_service_name        = 'php-fpm'
       $fpm_user                = 'apache'
       $fpm_group               = 'apache'
-      $package_prefix          = 'php-'
+      $package_prefix          = 'rh-php56-php-'
       $compiler_packages       = ['gcc', 'gcc-c++', 'make']
       $manage_repos            = false
       $root_group              = 'root'
