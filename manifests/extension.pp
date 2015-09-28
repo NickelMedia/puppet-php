@@ -14,7 +14,7 @@
 #   Could be "pecl", "apt", "dpkg" or any other OS package provider
 #   If set to "none", no package will be installed
 #
-# [*source*]
+# [*sourzce*]
 #   The source to install the extension from. Possible values
 #   depend on the *provider* used
 #
@@ -113,10 +113,6 @@ define php::extension(
         source   => $real_source,
       }
     }
-  }
-
-  if $provider != 'pecl' and $zend {
-    fail('You can only use the zend parameter for pecl PHP extensions!')
   }
 
   if $zend == true {
